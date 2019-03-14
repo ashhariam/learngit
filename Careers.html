@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html{
+  background: url(DSC_0607.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ h2{color: white;font-size: 24px; }
+ p{color:white;font-size:16px; }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color:#178bd8;
+}
+li{
+    float:left;
+}
+li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:16px 20px;
+}
+
+    li a:hover{
+        background-color:#5ba5d6;
+
+    }
+* {
+  box-sizing: border-box;
+  box-align:inherit;
+  }
+
+  
+input[type=text], select, textarea {
+    
+  width: 70%;
+  padding: 8px;
+  border: 0px solid rgb(61, 55, 28);
+  border-radius: 20px;
+  resize:vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: rgb(1, 26, 36);
+  width:20%;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #3380b3;
+}
+
+.container {
+    align-content: center;
+  border-radius: 5px;
+  width:50%;
+  background-color: #9bddee;
+  padding: 20px;
+}
+
+
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear texts after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.a{
+ text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="#career">Careers</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class ="a">
+<h2 align:center>Student Details</h2>
+</div>
+<div class="container">
+  <form action="html/css">
+  <h1>Personal Details</h2>  
+  <div class="row">
+    <div class="col-1">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-2">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-2">
+      <input type="text" id="lname" name="lname" placeholder="Your last name..">
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-1">
+        <label for="father">father Name</label>
+      </div>
+      <div class="col-2">
+        <input type="text" id="father" name="fathername" placeholder="Your father name..">
+      </div>
+    </div>
+  
+  <div class="row">
+        <div class="col-1">
+          <label for="email">Email Address</label>
+        </div>
+        <div class="col-2">
+          <input type="text" id="email" name="email" placeholder="Your Email Address.." required>
+          
+
+        </div>
+      </div>
+
+      <div class="row">
+            <div class="col-1">
+              <label for="mobile">Mobile</label>
+            </div>
+            <div class="col-2">
+              <input type="text" id="mobile" name="mobile" placeholder="Your Mobile Number.."required>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-1">
+                <label for="adress">Address for Communication</label>
+              </div>
+              <div class="col-2">
+                <textarea id="Address" name="Address" placeholder="Enter your Address" style="height:100px"required></textarea>
+              </div>
+            </div>
+
+          <div class="row">
+              <div class="col-1">
+                <label for="India">City</label>
+              </div>
+              <div class="col-2">
+                <select id="India" name="India">
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value = "Chennai">Chennai</option>
+                </select>
+              </div>
+            </div>
+
+
+           <h1>Educational Details</h1>
+      <div class="row">
+            <div class="col-1">
+              <label for="education">Highest Qualification</label>
+            </div>
+            <div class="col-2">
+              
+              <select id="work" name="work" required>
+                  
+                <option value="be/btech">BE/B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="mtech">M.Tech</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-1">
+                <label for="college">College/University</label>
+              </div>
+              <div class="col-2">
+                <input type="text" id="college" name="College" placeholder="College/University.."required>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                  <label for="ccity">College/University City</label>
+                </div>
+                <div class="col-2">
+                  <input type="text" id="ccity" name="ccity" placeholder="College/University City.."required>
+                </div>
+              </div>
+
+      <div class="row">
+            <div class="col-1">
+              <label for="work">Work Experience</label>
+            </div>
+            <div class="col-2">
+              <select id="work" name="work">
+                <option value="Fresher">Fresher</option>
+                <option value="Experience">Experience</option>
+                
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-1">
+                <label for="yop">Year Of Passing</label>
+              </div>
+              <div class="col-2">
+                <select id="yop" name="yop" required>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                                
+                </select>
+              </div>
+            </div>
+  
+  <div class="row">
+    <div class="col-1">
+      <label for="tellus">Tell Us About Yourself</label>
+    </div>
+    <div class="col-2">
+      <textarea id="tellus" name="tellus" placeholder="tell us About yourself" style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class ="row">
+    <input type="Submit"></h1>
+  </form>
+</div>
+
+</body>
+</html>
